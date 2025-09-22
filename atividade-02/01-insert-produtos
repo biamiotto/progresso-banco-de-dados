@@ -1,0 +1,33 @@
+CREATE DATABASE beautytechdb;
+
+CREATE TABLE produtos (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    marca VARCHAR(50) NOT NULL,
+    preco DECIMAL(10,2) NOT NULL,
+    categoria VARCHAR(30) NOT NULL,
+    estoque INT DEFAULT 0
+);
+
+INSERT INTO produtos (nome, marca, preco, categoria, estoque)
+VALUES
+('Protetor Solar', 'Creamy', 59.90, 'SkinCare', 200),
+('Perfume Her Code', 'O Boticário', 239.90, 'Perfumes', 350),
+('Blush Líquido', 'Rare Beauty', 199.00, 'Maquiagem', 500),
+('Óleo Capilar', 'Wella', 110.90, 'Cabelos', 400),
+('Sérum Facial', 'Creamy', 136.83, 'SkinCare', 250),
+('Base Soft Matte', 'Ruby Rose', 39.90, 'Maquiagem', 600),
+('Gloss Fenty Glow', 'Fenty Beauty', 149.00, 'Maquiagem', 350),
+('Paleta de Sombras', 'Huda Beauty', 319.90, 'Maquiagem', 200),
+('Máscara de Cílios Lash Sensational', 'Maybelline', 65.90, 'Maquiagem', 500),
+('Batom Líquido Velvet', 'Bruna Tavares', 49.90, 'Maquiagem', 450),
+('Gel de Limpeza Facial', 'Cerave', 89.90, 'SkinCare', 300),
+('Hidratante Facial Moisturizing Cream', 'Cerave', 149.90, 'SkinCare', 400),
+('Perfume Good Girl', 'Carolina Herrera', 499.00, 'Perfumes', 150),
+('Perfume La Vie Est Belle', 'Lancôme', 589.00, 'Perfumes', 120),
+('Leave-in All Soft', 'Redken', 189.90, 'Cabelos', 250),
+('Máscara Capilar Nutritiva', 'Kérastase', 320.00, 'Cabelos', 180),
+('Fixador de Maquiagem All Nighter', 'Urban Decay', 229.00, 'Maquiagem', 220),
+('Iluminador em Pó', 'Rare Beauty', 189.00, 'Maquiagem', 260),
+('Sérum Niacinamida 10%', 'Creamy', 69.90, 'SkinCare', 500),
+('Lip Oil Hidratante', 'Dior', 229.00, 'Maquiagem', 180);
