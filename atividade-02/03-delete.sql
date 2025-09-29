@@ -12,3 +12,7 @@ DELETE FROM produtos
 WHERE marca = 'Ruby Rose';
 
 SELECT * FROM produtos;
+
+-- Extra
+DELETE FROM produtos
+WHERE estoque > 250 AND estoque < 400;
