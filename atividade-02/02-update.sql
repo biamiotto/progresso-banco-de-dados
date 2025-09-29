@@ -12,7 +12,8 @@ WHERE marca = 'Creamy';
 
 SELECT * FROM produtos;
 
-UPDATE produtos SET preco = preco - preco * 0.1;
+UPDATE produtos SET preco = preco * 0.9
+WHERE estoque > 300;
 
 SELECT * FROM produtos;
 
