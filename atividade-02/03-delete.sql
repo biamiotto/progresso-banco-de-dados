@@ -1,10 +1,10 @@
 DELETE FROM produtos
-WHERE estoque < 10;
+WHERE estoque < 200;
 
 SELECT * FROM produtos;
 
 DELETE FROM produtos
-WHERE preco < 20;
+WHERE preco < 100;
 
 SELECT * FROM produtos;
 
